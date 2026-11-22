@@ -1,4 +1,4 @@
-const CACHE = 'tboc-jury-2026-v2';
+const CACHE = 'tboc-jury-2026-v3';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
   'The-Best-of-Canephora-Brazil-2026_International-Jury-Program_EN.pdf', 'The-Best-of-Canephora-Brazil-2026_Programa-do-Juri-Internacional_PT.pdf'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
